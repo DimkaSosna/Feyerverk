@@ -1,0 +1,134 @@
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@keyframes appearR {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shakeR {
+  0% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(5deg);
+  }
+  10% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(-5deg);
+  }
+  20% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(0);
+  }
+  35% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(0);
+  }
+  45% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  55% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(0);
+  }
+  65% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(0);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  85% {
+    transform: rotate(0);
+  }
+  90% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes moveAndDisappearR {
+  0% {
+    transform: translateY(0) scale(100%);
+  }
+  100% {
+    transform: translateY(-500px) scale(0%);
+  }
+}
+
+.rocket {
+  animation-name: appearR, shakeR, moveAndDisappearR;
+  animation-duration: 2s, 0.5s, 2s;
+  animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  animation-delay: 0s, 2s, 2.5s;
+  animation-fill-mode: forwards, forwards, forwards;
+}
+
+@keyframes appearS {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleS {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+@keyframes moveAndRotateS {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  100% {
+    transform: translate(200px, 200px) rotate(360deg);
+  }
+}
+
+.salut {
+  opacity: 0;
+  margin-bottom: 200px;
+  top: 100px;
+}
+
+.salut {
+  animation-name: appearS, scaleS, moveAndRotateS;
+  animation-duration: 1s, 1s, 1s, 1s;
+  animation-timing-function: ease-in, ease-in, ease-in-out;
+  animation-delay: 5s, 5s, 5s, 5s;
+  animation-fill-mode: forwards, forwards, forwards;
+}
